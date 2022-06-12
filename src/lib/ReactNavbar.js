@@ -8,6 +8,11 @@ const ReactNavbar = ({
   navColor2 = navColor1,
   navColor3 = navColor2,
   navColor4 = navColor3,
+  nav1Image = '',
+  nav2Image = nav1Image,
+  nav3Image = nav2Image,
+  nav4Image = nav3Image,
+  
   logo,
   logoWidth = "100px",
   logoHeight = "unset",
@@ -264,7 +269,8 @@ const ReactNavbar = ({
           className="nav1"
           style={{
             transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
-            backgroundColor: navColor1,
+            backgroundImage: nav1Image,
+            backgroundSize: '100% 100%',
             flexDirection: nav1FlexDirection,
             alignItems: nav1alignItems,
             justifyContent: nav1justifyContent,
@@ -293,7 +299,8 @@ const ReactNavbar = ({
           className="nav2"
           style={{
             transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
-            backgroundColor: navColor2,
+            backgroundImage: nav2Image,
+            backgroundSize: '100% 100%',
             flexDirection: nav2FlexDirection,
             alignItems: nav2alignItems,
             justifyContent: nav2justifyContent,
@@ -351,7 +358,8 @@ const ReactNavbar = ({
           className="nav3"
           style={{
             transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
-            backgroundColor: navColor3,
+            backgroundImage: nav3Image,
+            backgroundSize: '100% 100%',
             flexDirection: nav3FlexDirection,
             alignItems: nav3alignItems,
             justifyContent: nav3justifyContent,
@@ -409,7 +417,8 @@ const ReactNavbar = ({
           className="nav4"
           style={{
             transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
-            backgroundColor: navColor4,
+            backgroundImage: nav4Image,
+            backgroundSize: '100% 100%',
             flexDirection: nav4FlexDirection,
             alignItems: nav4alignItems,
             justifyContent: nav4justifyContent,
